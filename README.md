@@ -1,11 +1,11 @@
-# Hi there, I'm Gaius 👋
+# Hi there, I'm Gaius 
 
-### 🚀 Full-Stack Web Developer & Machine Learning Engineer
+###  Full-Stack Web Developer & Machine Learning Engineer
 Building scalable web applications, automated data pipelines, and intelligent AI-driven tools.
 
 ---
 
-### 🧰 Tech Stack
+### Tech Stack
 
 **Frontend & Mobile:** ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
@@ -24,7 +24,7 @@ Building scalable web applications, automated data pipelines, and intelligent AI
 
 ---
 
-### 📌 Featured Projects
+###  Featured Projects
 
 * **Text Moderation & Emotion Classification Pipeline** *ML pipeline evaluating dataset corpora for emotion recognition and automated moderation metrics.* `Python` • `Scikit-Learn` • `NLP`
 
@@ -36,7 +36,7 @@ Building scalable web applications, automated data pipelines, and intelligent AI
 
 ---
 
-### 📫 Connect with Me
+###  Connect with Me
 
 Gmail: oluwolegaiusayokunle@gmail.com
 
