@@ -38,11 +38,6 @@ Building scalable web applications, automated data pipelines, and intelligent AI
 
 ###  Connect with Me
 
-Gmail: oluwolegaiusayokunle@gmail.com
-
-
-
-
-- **Portfolio:** [Your Portfolio Link]
+- **Portfolio:** [[(https://gaiuso33.github.io/Gaius-portfolio/)]]
 - **LinkedIn:** [Your LinkedIn Link]
-- **Email:** [your.email@example.com]
+- **Email:** [oluwolegaiusayokunle@gmail.com]
