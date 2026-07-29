@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer & ML Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-teal-300 selection:text-teal-900">
+
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/80 border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold text-teal-400">DevPortfolio<span class="text-slate-100">.</span></a>
+      <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-teal-400 transition">About</a>
+        <a href="#skills" class="hover:text-teal-400 transition">Skills</a>
+        <a href="#projects" class="hover:text-teal-400 transition">Projects</a>
+        <a href="#contact" class="hover:text-teal-400 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="max-w-6xl mx-auto px-6 py-24 md:py-32 flex flex-col items-start justify-center">
+    <span class="text-teal-400 text-sm font-semibold tracking-wider uppercase mb-3">Hi, my name is</span>
+    <h1 class="text-4xl sm:text-6xl font-extrabold text-slate-100 tracking-tight mb-4">
+      Full-Stack & ML Developer.
+    </h1>
+    <h2 class="text-2xl sm:text-4xl font-bold text-slate-400 mb-6">
+      Building scalable web applications and intelligent data pipelines.
+    </h2>
+    <p class="text-slate-400 max-w-2xl text-lg mb-8 leading-relaxed">
+      I build production-ready frontend/backend solutions and machine learning workflows. Passionate about clean code, performance optimization, and solving real-world problems through data and web technologies[cite: 118, 128].
+    </p>
+    <div class="flex space-x-4">
+      <a href="#projects" class="px-6 py-3 bg-teal-500 text-slate-950 font-semibold rounded-lg hover:bg-teal-400 transition shadow-lg shadow-teal-500/20">
+        View Projects
+      </a>
+      <a href="#contact" class="px-6 py-3 bg-slate-800 text-slate-200 border border-slate-700 font-semibold rounded-lg hover:bg-slate-700 transition">
+        Get in Touch
+      </a>
+    </div>
+  </section>
+
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800">
+    <h2 class="text-2xl font-bold text-slate-100 mb-8 flex items-center">
+      <span class="text-teal-400 font-mono text-xl mr-2">01.</span> Technical Stack
+    </h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      <div class="bg-slate-800/50 border border-slate-800 p-4 rounded-xl">
+        <h3 class="text-teal-400 font-semibold text-sm mb-2">Frontend</h3>
+        <p class="text-slate-300 text-sm">React, JavaScript (ES6+), Tailwind CSS, HTML5/CSS3</p>
+      </div>
+      <div class="bg-slate-800/50 border border-slate-800 p-4 rounded-xl">
+        <h3 class="text-teal-400 font-semibold text-sm mb-2">Backend</h3>
+        <p class="text-slate-300 text-sm">Node.js, Express, REST APIs, MongoDB, SQL</p>
+      </div>
+      <div class="bg-slate-800/50 border border-slate-800 p-4 rounded-xl">
+        <h3 class="text-teal-400 font-semibold text-sm mb-2">Machine Learning</h3>
+        <p class="text-slate-300 text-sm">Python, Scikit-Learn, Pandas, Text Classification, Data Pipelines</p>
+      </div>
+      <div class="bg-slate-800/50 border border-slate-800 p-4 rounded-xl">
+        <h3 class="text-teal-400 font-semibold text-sm mb-2">Tools & DevOps</h3>
+        <p class="text-slate-300 text-sm">Git, GitHub, Docker, Postman, Vercel/Render</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800">
+    <h2 class="text-2xl font-bold text-slate-100 mb-8 flex items-center">
+      <span class="text-teal-400 font-mono text-xl mr-2">02.</span> Featured Projects [cite: 167]
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-4">
+            <span class="text-xs font-mono text-teal-400 bg-teal-950/80 border border-teal-800/50 px-2.5 py-1 rounded-full">Machine Learning</span>
+            <div class="flex space-x-3 text-slate-400">
+              <a href="#" class="hover:text-teal-400 transition" title="GitHub Repo">GitHub</a>
+              <a href="#" class="hover:text-teal-400 transition" title="Live Demo">Demo</a>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-slate-100 mb-2">Text Classification & Toxicity Moderation Pipeline</h3>
+          <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+            An automated ML workflow built to analyze dataset corpora for emotion recognition and text moderation. Processes large text inputs and outputs toxicity classification metrics.
+          </p>
+        </div>
+        <div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800/80 text-xs font-mono text-slate-400">
+            <span>Python</span> • <span>Scikit-Learn</span> • <span>Pandas</span> • <span>NLP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-4">
+            <span class="text-xs font-mono text-teal-400 bg-teal-950/80 border border-teal-800/50 px-2.5 py-1 rounded-full">Full-Stack AI</span>
+            <div class="flex space-x-3 text-slate-400">
+              <a href="#" class="hover:text-teal-400 transition">GitHub</a>
+              <a href="#" class="hover:text-teal-400 transition">Demo</a>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-slate-100 mb-2">AI-Powered Resume Screener</h3>
+          <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+            A web application that automatically parses candidate resumes against job description keywords, scoring candidate fit using NLP scoring algorithms.
+          </p>
+        </div>
+        <div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800/80 text-xs font-mono text-slate-400">
+            <span>JavaScript</span> • <span>Node.js</span> • <span>Express</span> • <span>OpenAI API</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-4">
+            <span class="text-xs font-mono text-teal-400 bg-teal-950/80 border border-teal-800/50 px-2.5 py-1 rounded-full">Web App</span>
+            <div class="flex space-x-3 text-slate-400">
+              <a href="#" class="hover:text-teal-400 transition">GitHub</a>
+              <a href="#" class="hover:text-teal-400 transition">Demo</a>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-slate-100 mb-2">Student Performance Analytics Dashboard</h3>
+          <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+            Interactive dashboard rendering performance metrics, dynamic data charts, and student score distributions with filterable data views.
+          </p>
+        </div>
+        <div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800/80 text-xs font-mono text-slate-400">
+            <span>React</span> • <span>Tailwind CSS</span> • <span>Chart.js</span> • <span>REST API</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-slate-800/40 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-4">
+            <span class="text-xs font-mono text-teal-400 bg-teal-950/80 border border-teal-800/50 px-2.5 py-1 rounded-full">Automation</span>
+            <div class="flex space-x-3 text-slate-400">
+              <a href="#" class="hover:text-teal-400 transition">GitHub</a>
+              <a href="#" class="hover:text-teal-400 transition">Demo</a>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-slate-100 mb-2">Automated Google Forms Generator</h3>
+          <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+            Utility tool converting raw text and document uploads directly into structured Google Forms via API integration and AI question generation.
+          </p>
+        </div>
+        <div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800/80 text-xs font-mono text-slate-400">
+            <span>Node.js</span> • <span>Google Forms API</span> • <span>Express</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="max-w-4xl mx-auto px-6 py-24 text-center border-t border-slate-800">
+    <h2 class="text-3xl font-bold text-slate-100 mb-4">Let's Connect</h2>
+    <p class="text-slate-400 max-w-lg mx-auto mb-8">
+      I'm always open to discussing new web development projects, machine learning collaborations, or software opportunities.
+    </p>
+    <a href="mailto:your-email@example.com" class="inline-block px-8 py-4 bg-teal-500 text-slate-950 font-bold rounded-lg hover:bg-teal-400 transition shadow-lg shadow-teal-500/20 mb-12">
+      Say Hello
+    </a>
+    <div class="flex justify-center space-x-6 text-slate-400 text-sm">
+      <a href="https://github.com" target="_blank" class="hover:text-teal-400 transition">GitHub</a>
+      <a href="https://linkedin.com" target="_blank" class="hover:text-teal-400 transition">LinkedIn [cite: 27]</a>
+      <a href="https://twitter.com" target="_blank" class="hover:text-teal-400 transition">X / Twitter [cite: 18]</a>
+    </div>
+  </section>
+
+</body>
+</html>
