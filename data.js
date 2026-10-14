@@ -143,6 +143,22 @@ const PROJECTS = [
     tags: ["React", "CSS", "JavaScript"],
     github: "https://github.com/gaiuso33/e-learning-app",
     demo: "https://e-learning-app.vercel.app"
+  },
+  {
+    title: "Life Dashboard",
+    category: "ML and Web",
+    summary: "A personal dashboard that turns daily check-ins into visible progress across fitness, money and career, rewards consistency, and uses an AI advisor and forecasts to keep you on track.",
+    tags: ["Supabase", "CI/CD", "TypeScript"],
+    github: "https://github.com/gaiuso33/life-dashboard",
+    demo: "https://life-dashboard-neon-ten.vercel.app/"
+  },
+  {
+    title: "Student Analytics",
+    category: "Web",
+    summary: "A web dashboard for schools and departments to track student performance: grades, GPA trends, course difficulty and students at risk. Staff sign in with their own accounts; administrators can enter, import and edit data, while viewers get read-only access.",
+    tags: ["Python", "Javascript"],
+    github: "https://github.com/gaiuso33/student-analytics",
+    demo: "https://student-analytics-dash.netlify.app/"
   }
   /* ,{ title: "", category: "Web", summary: "", tags: [], github: "", demo: "" } */
 ];
