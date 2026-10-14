@@ -2,34 +2,112 @@
 
 const PROFILE = {
   name: "Oluwole Gaius",
-  title: "Full-stack developer and machine learning engineer",
-  intro: "I build web apps and machine learning tools that people actually use. I've spent three years working on a team as a data analyst and ML engineer, and I'm finishing a computer science degree at the University of Ibadan on top of a statistics degree.",
-  status: "Available for freelance and full-time work",
+  title: "Software engineer and frontend developer with machine learning experience",
+  intro: "I build web apps and machine learning tools that people actually use. I'm a statistics graduate finishing a computer science degree at the University of Ibadan, with hands-on experience in React, Next.js, Python and ML pipelines from internships and a team I've worked with since 2024.",
+  status: "Available immediately for freelance and full-time work",
+  location: "Ibadan, Oyo State, Nigeria",
+  photo: "",      // add a photo: put a file like gaius.jpg in this folder and write "gaius.jpg" here
   email: "oluwolegaiusayokunle@gmail.com",
   github: "https://github.com/gaiuso33",
   linkedin: "",   // paste your LinkedIn profile URL; the link is hidden while empty
   twitter: "https://twitter.com/4charactas",
-  yearsExperience: 3
+  cv: ""          // e.g. "OluwoleGaius.pdf" (put the file in this folder) to show a Download CV button
 };
 
 const ABOUT = [
-  "I studied statistics, so I care whether a model or a number is right, not just whether it runs. I'm now in my final year of computer science, which is where the web and software side of my work comes from.",
-  "I like taking a messy problem, such as hand-typed exams, unread resumes or scattered marks, and turning it into a tool someone can use in a minute."
+  "I studied statistics, so I care whether a model or a number is right, not just whether it runs. I'm now finishing a second degree in computer science, which is where the web and software side of my work comes from.",
+  "I like taking a messy problem, such as hand-typed exams, unread resumes or scattered marks, and turning it into a tool someone can use in a minute. I'm especially interested in frontend development, software engineering, data and AI, and cybersecurity.",
+  "I speak English and Yoruba."
+];
+
+// Newest first. Add a job by copying a block.
+const EXPERIENCE = [
+  {
+    role: "Software Engineering Intern",
+    org: "Crop2Cash",
+    when: "Aug 2026 to now",
+    note: "Ibadan, Nigeria. Internship.",
+    points: [
+      "Build and maintain responsive web applications with Next.js and Supabase.",
+      "Developed API integrations that cut data retrieval times by 15% across key endpoints.",
+      "Work with a team of 4 developers to test, debug and ship features on schedule.",
+      "Documented technical workflows and database schemas so new interns can start faster."
+    ]
+  },
+  {
+    role: "Machine Learning Engineer and Data Analyst",
+    org: "The Analyst Team",
+    when: "Jan 2024 to now",
+    note: "Ibadan, Nigeria. Mid level.",
+    points: [
+      "Train and test machine learning models, including a fruit classifier and a resume screener.",
+      "Build pipelines that generate data and train and test models such as XGBoost and Random Forest.",
+      "Worked on computer vision projects that detect tumors in MRI scans."
+    ]
+  },
+  {
+    role: "IT Support Intern",
+    org: "University of Ibadan",
+    when: "Jan to Apr 2025",
+    note: "Ibadan, Nigeria. Internship.",
+    points: [
+      "Handled IT support and troubleshooting for the university's staff and students.",
+      "Hands-on work with servers, routers and network switches, including on-site cable crimping and colour coding.",
+      "Worked alongside network administrators and developers to solve issues."
+    ]
+  },
+  {
+    role: "Junior Web Developer and Software Intern",
+    org: "International Institute of Tropical Agriculture (IITA)",
+    when: "Jan to Jun 2024",
+    note: "Ibadan, Nigeria. Internship.",
+    points: [
+      "Wrote Python scripts to automate workflows and scraped data from IITA-related sites.",
+      "Worked on a resume-screening application and a fruit classification project using machine learning.",
+      "Learned JavaScript and React, including components and how to build scalable websites."
+    ]
+  }
 ];
 
 const CREDENTIALS = [
-  { what: "BSc Computer Science (400 level)", where: "University of Ibadan", when: "In progress" },
-  { what: "Statistics degree", where: "University of Ibadan", when: "Completed this year" },
-  { what: "Data analyst and ML engineer", where: "Team experience", when: "About 3 years" },
-  { what: "Coursera certifications", where: "Python, machine learning, AI and software development", when: "In progress" }
+  { what: "BSc Computer Science", where: "University of Ibadan", when: "In progress" },
+  { what: "BSc Statistics", where: "University of Ibadan", when: "Completed" }
 ];
 
 // Add a skill by adding a word to a list. Add a group by adding a new line.
 const SKILLS = {
-  "Web development": ["React", "JavaScript (ES6+)", "HTML and CSS", "Tailwind CSS", "Node.js", "Express", "REST APIs"],
-  "Machine learning and data": ["Python", "Scikit-Learn", "Pandas", "Text classification", "Data pipelines", "Statistics"],
-  "Databases": ["MongoDB", "SQL"],
-  "Tools": ["Git and GitHub", "Docker", "Postman", "Vercel", "Render"]
+  "Web development": ["React", "Next.js", "JavaScript (ES6+)", "HTML and CSS", "Tailwind CSS", "Node.js", "Express", "Flask", "REST APIs"],
+  "Machine learning and data": ["Python", "Scikit-Learn", "XGBoost", "Random Forest", "Pandas", "Computer vision", "Text classification", "Data pipelines", "Data analysis", "Statistics"],
+  "Databases": ["Supabase", "MongoDB", "SQL"],
+  "Tools and practice": ["Git and GitHub", "Docker", "Postman", "CI/CD", "Linux", "Agile and Scrum", "Vercel", "Render"],
+  "IT support": ["Computer networking", "Servers, routers and switches", "Troubleshooting"]
+};
+
+// Coursera certificates, all earned in 2026. Add one by adding a line to a group.
+const CERTIFICATES = {
+  "Python and data": [
+    ["Data Analysis with Python", "IBM"],
+    ["Data Analysis and Visualization with Python", "Microsoft"],
+    ["Python for Data Science, AI and Development", "IBM"],
+    ["Python Programming Fundamentals", "Microsoft"]
+  ],
+  "AI and machine learning": [
+    ["Machine Learning with Python", "IBM"],
+    ["Introduction to Artificial Intelligence", "IBM"],
+    ["Generative AI: Introduction and Applications", "IBM"],
+    ["Generative AI: Prompt Engineering Basics", "IBM"],
+    ["Developing AI Applications with Python and Flask", "IBM"]
+  ],
+  "Software engineering and DevOps": [
+    ["Web Development with Python", "Microsoft"],
+    ["Introduction to Software Engineering", "IBM"],
+    ["Getting Started with Git and GitHub", "IBM"],
+    ["Introduction to Agile Development and Scrum", "IBM"],
+    ["Continuous Integration and Continuous Delivery", "IBM"],
+    ["Introduction to DevOps", "IBM"],
+    ["Introduction to Cloud Computing", "IBM"],
+    ["Hands-on Introduction to Linux Commands and Shell Scripting", "IBM"]
+  ]
 };
 
 // Add a project by copying one block. category decides which filter button it appears under.

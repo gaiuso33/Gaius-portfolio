@@ -10,14 +10,15 @@
 <style>
 :root{--bg:#EEF1F4;--ink:#14202B;--mute:#4F6070;--card:#fff;--line:#D3DAE1;--acc:#0F6B4F;--accInk:#fff;--hi:#E8A317}
 @media(prefers-color-scheme:dark){:root{--bg:#101820;--ink:#E6ECF1;--mute:#9BAAB8;--card:#17222C;--line:#26333F;--acc:#4FD1A1;--accInk:#08281D}}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
+*{box-sizing:border-box}[hidden]{display:none!important}html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "Bricolage Grotesque",system-ui,sans-serif}
 a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--hi);outline-offset:3px}
 .wrap{max-width:1040px;margin:0 auto;padding:0 1.5rem}
 header{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0}
 header a{text-decoration:none;font-weight:600}
 nav{display:flex;gap:1.5rem;font-size:.95rem}nav a{color:var(--mute)}nav a:hover{color:var(--ink)}
-.hero{padding:4rem 0 5rem}
+.hero{padding:4rem 0 5rem;display:flex;gap:3rem;align-items:center;justify-content:space-between}.hero>div{max-width:40em}.photo{width:220px;height:220px;flex:none;border-radius:50%;object-fit:cover;border:4px solid var(--acc)}
+.where{color:var(--mute);margin:0 0 1rem;font-size:.95rem}
 .status{display:inline-flex;gap:.5rem;align-items:center;font-size:.95rem;color:var(--mute);margin:0 0 1.5rem}
 .status:before{content:"";width:.6rem;height:.6rem;border-radius:50%;background:var(--hi);animation:pulse 2s ease-out 3}
 @keyframes pulse{50%{box-shadow:0 0 0 8px transparent;transform:scale(1.2)}}
@@ -53,7 +54,12 @@ h2{font-size:1.9rem;letter-spacing:-.02em;margin:0 0 1.75rem}
 .social{display:flex;justify-content:center;gap:1.5rem;margin-top:2rem;color:var(--mute)}
 .hobby{margin-top:2.5rem;font-size:.95rem;color:var(--mute)}.hobby a{color:var(--acc);font-weight:600}
 footer{padding:2rem 0;text-align:center;font-size:.85rem;color:var(--mute)}
-@media(max-width:720px){.about{grid-template-columns:1fr;gap:2rem}nav{gap:1rem}}
+.job{display:grid;grid-template-columns:200px 1fr;gap:2rem;padding:1.5rem 0;border-top:1px solid var(--line)}.job:first-of-type{border-top:0;padding-top:0}
+.job .when{color:var(--mute);font-size:.92rem}.job h3{font-size:1.2rem;margin:0}.job .org{color:var(--acc);font-weight:600;margin:0 0 .6rem}
+.job ul{margin:0;padding-left:1.1rem;color:var(--mute)}.job li{margin-bottom:.35rem}
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}.certs h3{font-size:1rem;margin:0 0 .75rem}
+.certs ul{list-style:none;margin:0;padding:0}.certs li{padding:.4rem 0;border-bottom:1px solid var(--line);font-size:.95rem}.certs li span{color:var(--mute);font-size:.85rem;display:block}
+@media(max-width:720px){.hero{flex-direction:column-reverse;align-items:flex-start;gap:2rem}.job{grid-template-columns:1fr;gap:.5rem}.about{grid-template-columns:1fr;gap:2rem}nav{gap:1rem}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -61,19 +67,24 @@ footer{padding:2rem 0;text-align:center;font-size:.85rem;color:var(--mute)}
 <div class="wrap">
   <header>
     <a href="#top" id="logo"></a>
-    <nav aria-label="Main"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+    <nav aria-label="Main"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
   </header>
 
   <main id="top">
     <div class="hero">
+     <div>
       <p class="status" id="status"></p>
       <h1 id="name"></h1>
       <p class="title" id="title"></p>
+      <p class="where" id="where"></p>
       <p class="intro" id="intro"></p>
       <div class="btns">
         <a class="btn main" href="#projects">See my projects</a>
         <a class="btn alt" id="hireBtn" href="#contact">Work with me</a>
+        <a class="btn alt" id="cvBtn" href="#" hidden download>Download CV</a>
       </div>
+     </div>
+     <img class="photo" id="photo" alt="Portrait of Oluwole Gaius" hidden>
     </div>
 
     <section id="about">
@@ -84,7 +95,11 @@ footer{padding:2rem 0;text-align:center;font-size:.85rem;color:var(--mute)}
       </div>
     </section>
 
+    <section id="experience"><h2>Experience</h2><div id="jobs"></div></section>
+
     <section id="skills"><h2>What I work with</h2><div class="skills" id="skillList"></div></section>
+
+    <section id="certs"><h2>Certifications</h2><div class="certs" id="certList"></div></section>
 
     <section id="projects">
       <h2>Projects</h2>
@@ -114,6 +129,11 @@ $("status").textContent = PROFILE.status;
 $("name").textContent = PROFILE.name;
 $("title").textContent = PROFILE.title;
 $("intro").textContent = PROFILE.intro;
+$("where").textContent = PROFILE.location || "";
+if (PROFILE.photo) { $("photo").src = PROFILE.photo; $("photo").hidden = false; }
+if (PROFILE.cv) { $("cvBtn").href = PROFILE.cv; $("cvBtn").hidden = false; }
+$("jobs").innerHTML = EXPERIENCE.map(j => `<div class="job"><div class="when">${esc(j.when)}<br>${esc(j.note)}</div><div><h3>${esc(j.role)}</h3><p class="org">${esc(j.org)}</p><ul>${j.points.map(p => `<li>${esc(p)}</li>`).join("")}</ul></div></div>`).join("");
+$("certList").innerHTML = Object.entries(CERTIFICATES).map(([g, l]) => `<div><h3>${esc(g)}</h3><ul>${l.map(([n, i]) => `<li>${esc(n)}<span>${esc(i)}, 2026</span></li>`).join("")}</ul></div>`).join("");
 $("aboutText").innerHTML = ABOUT.map(p => `<p>${esc(p)}</p>`).join("");
 $("cred").innerHTML = CREDENTIALS.map(c => `<li><b>${esc(c.what)}</b><span>${esc(c.where)} &middot; ${esc(c.when)}</span></li>`).join("");
 $("skillList").innerHTML = Object.entries(SKILLS).map(([g, list]) =>
