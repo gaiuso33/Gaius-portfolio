@@ -5,7 +5,7 @@ const PROFILE = {
   intro: "I build web apps and machine learning tools that people actually use. I'm a statistics graduate finishing a computer science degree at the University of Ibadan, with hands-on experience in React, Next.js, Python and ML pipelines from internships and a team I've worked with since 2024.",
   status: "Available immediately for freelance and full-time work",
   location: "Ibadan, Oyo State, Nigeria",
-  photo: "20240613_091946.heic",      
+  photo: "images/gaius.jpg",      
   email: "oluwolegaiusayokunle@gmail.com",
   github: "https://github.com/gaiuso33",
   linkedin: "",   // paste your LinkedIn profile URL; the link is hidden while empty
