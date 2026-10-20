@@ -134,6 +134,7 @@ $("where").textContent = PROFILE.location || "";
 if (PROFILE.photo) { $("photo").src = PROFILE.photo; $("photo").hidden = false; }
 if (PROFILE.cv) { $("cvBtn").href = PROFILE.cv; $("cvBtn").hidden = false; }
 $("jobs").innerHTML = EXPERIENCE.map(j => `<div class="job"><div class="when">${esc(j.when)}<br>${esc(j.note)}</div><div><h3>${esc(j.role)}</h3><p class="org">${esc(j.org)}</p><ul>${j.points.map(p => `<li>${esc(p)}</li>`).join("")}</ul></div></div>`).join("");
+$("proList").innerHTML = PRO_CERTS.map(c => `<div><b>${esc(c.name)}</b><span>${esc(c.issuer)}, ${esc(c.year)}</span>${c.courses.length ? `<details><summary>${c.courses.length} courses included</summary><ul>${c.courses.map(x => `<li>${esc(x)}</li>`).join("")}</ul></details>` : ""}</div>`).join("");
 $("certList").innerHTML = Object.entries(CERTIFICATES).map(([g, l]) => `<div><h3>${esc(g)}</h3><ul>${l.map(([n, i]) => `<li>${esc(n)}<span>${esc(i)}, 2026</span></li>`).join("")}</ul></div>`).join("");
 $("aboutText").innerHTML = ABOUT.map(p => `<p>${esc(p)}</p>`).join("");
 $("cred").innerHTML = CREDENTIALS.map(c => `<li><b>${esc(c.what)}</b><span>${esc(c.where)} &middot; ${esc(c.when)}</span></li>`).join("");
