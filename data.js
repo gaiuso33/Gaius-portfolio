@@ -29,7 +29,6 @@ const EXPERIENCE = [
     note: "Ibadan, Nigeria. Internship.",
     points: [
       "Build and maintain responsive web applications with Next.js and Supabase.",
-      "Developed API integrations that cut data retrieval times by 15% across key endpoints.",
       "Work with a team of 4 developers to test, debug and ship features on schedule.",
       "Documented technical workflows and database schemas so new interns can start faster."
     ]
@@ -83,6 +82,28 @@ const SKILLS = {
   "IT support": ["Computer networking", "Servers, routers and switches", "Troubleshooting"]
 };
 
+// Professional certificates (full programs). Add the courses each one includes as you like.
+const PRO_CERTS = [
+  {
+    name: "IBM DevOps and Software Engineering Professional Certificate", issuer: "IBM", year: "2026",
+    courses: [
+      "Introduction to DevOps", "Introduction to Cloud Computing", "Introduction to Agile Development and Scrum",
+      "Introduction to Software Engineering", "Getting Started with Git and GitHub",
+      "Hands-on Introduction to Linux Commands and Shell Scripting", "Python for Data Science, AI & Development",
+      "Developing AI Applications with Python and Flask", "Introduction to Containers w/ Docker, Kubernetes & OpenShift",
+      "Application Development using Microservices and Serverless", "Introduction to Test and Behavior Driven Development",
+      "Continuous Integration and Continuous Delivery (CI/CD)", "Application Security for Developers and DevOps Professionals",
+      "Monitoring and Observability for Development and DevOps"
+    ]
+  },
+  {
+    name: "Microsoft Python Development Professional Certificate", issuer: "Microsoft", year: "2026",
+    courses: [
+      "Python Programming Fundamentals", "Data Analysis and Visualization with Python", "Automation and Scripting with Python",
+      "Web Development with Python", "Advanced Python Development Techniques", "Project Development in Python"
+    ]
+  }
+];
 // Coursera certificates, all earned in 2026. Add one by adding a line to a group.
 const CERTIFICATES = {
   "Python and data": [
