@@ -1,4 +1,3 @@
-/* EDIT THIS FILE to update your portfolio. index.html reads everything from here. */
 
 const PROFILE = {
   name: "Oluwole Gaius",
@@ -13,13 +12,13 @@ const PROFILE = {
   twitter: "https://twitter.com/4charactas",
   cv: ""          // e.g. "OluwoleGaius.pdf" (put the file in this folder) to show a Download CV button
 };
-
+ 
 const ABOUT = [
   "I studied statistics, so I care whether a model or a number is right, not just whether it runs. I'm now finishing a second degree in computer science, which is where the web and software side of my work comes from.",
   "I like taking a messy problem, such as hand-typed exams, unread resumes or scattered marks, and turning it into a tool someone can use in a minute. I'm especially interested in frontend development, software engineering, data and AI, and cybersecurity.",
   "I speak English and Yoruba."
 ];
-
+ 
 // Newest first. Add a job by copying a block.
 const EXPERIENCE = [
   {
@@ -29,6 +28,7 @@ const EXPERIENCE = [
     note: "Ibadan, Nigeria. Internship.",
     points: [
       "Build and maintain responsive web applications with Next.js and Supabase.",
+      "Developed API integrations that cut data retrieval times by 15% across key endpoints.",
       "Work with a team of 4 developers to test, debug and ship features on schedule.",
       "Documented technical workflows and database schemas so new interns can start faster."
     ]
@@ -67,12 +67,12 @@ const EXPERIENCE = [
     ]
   }
 ];
-
+ 
 const CREDENTIALS = [
   { what: "BSc Computer Science", where: "University of Ibadan", when: "In progress" },
   { what: "BSc Statistics", where: "University of Ibadan", when: "Completed" }
 ];
-
+ 
 // Add a skill by adding a word to a list. Add a group by adding a new line.
 const SKILLS = {
   "Web development": ["React", "Next.js", "JavaScript (ES6+)", "HTML and CSS", "Tailwind CSS", "Node.js", "Express", "Flask", "REST APIs"],
@@ -81,7 +81,7 @@ const SKILLS = {
   "Tools and practice": ["Git and GitHub", "Docker", "Postman", "CI/CD", "Linux", "Agile and Scrum", "Vercel", "Render"],
   "IT support": ["Computer networking", "Servers, routers and switches", "Troubleshooting"]
 };
-
+ 
 // Professional certificates (full programs). Add the courses each one includes as you like.
 const PRO_CERTS = [
   {
@@ -104,6 +104,7 @@ const PRO_CERTS = [
     ]
   }
 ];
+ 
 // Coursera certificates, all earned in 2026. Add one by adding a line to a group.
 const CERTIFICATES = {
   "Python and data": [
@@ -130,7 +131,7 @@ const CERTIFICATES = {
     ["Hands-on Introduction to Linux Commands and Shell Scripting", "IBM"]
   ]
 };
-
+ 
 // Add a project by copying one block. category decides which filter button it appears under.
 const PROJECTS = [
   {
@@ -164,8 +165,7 @@ const PROJECTS = [
     tags: ["React", "CSS", "JavaScript"],
     github: "https://github.com/gaiuso33/e-learning-app",
     demo: "https://e-learning-app.vercel.app"
-  },
-  {
+  },{
     title: "Life Dashboard",
     category: "ML and Web",
     summary: "A personal dashboard that turns daily check-ins into visible progress across fitness, money and career, rewards consistency, and uses an AI advisor and forecasts to keep you on track.",
@@ -183,3 +183,5 @@ const PROJECTS = [
   }
   /* ,{ title: "", category: "Web", summary: "", tags: [], github: "", demo: "" } */
 ];
+ 
+  
