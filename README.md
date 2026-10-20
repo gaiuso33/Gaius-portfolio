@@ -52,10 +52,12 @@ I build web apps and machine learning tools that people actually use. I'm a stat
 
 | Project | What it does | Built with | Links |
 | --- | --- | --- | --- |
+| **Life Dashboard** | A personal dashboard that turns daily check-ins into visible progress across fitness, money and caree | Supabase, CSS, TypeScript | [Code](https://github.com/gaiuso33/life-dashboard) · [Live demo](https://life-dashboard-neon-ten.vercel.app/) |
+| **Student Analytics** | A web dashboard for schools and departments to track student performance: grades, GPA trends, course difficulty and students at risk. | Python, JavaScript | [Code](https://github.com/gaiuso33/student-analytics) · [Live demo](https://student-analytics-dash.netlify.app/) |
 | **Automated Google Forms Generator** | Turns written exams, quizzes and study guides into auto-graded Google Forms | Python, Scikit-Learn, Pandas, NLP | [Code](https://github.com/gaiuso33/form-generator-ui) · [Live demo](https://form-generator-ui.vercel.app) |
 | **AI-Powered Resume Screener** | Compares a resume PDF to a job description, then gives a match score, missing skills and tips | Python (Flask), PyPDF2, Chart.js, ReportLab | [Code](https://github.com/gaiuso33/resume-checker-main) · [Live demo](https://resume-checker-main-2.onrender.com) |
 | **GPA Calculator** | Helps students track their academic performance | React, CSS, JavaScript | [Code](https://github.com/gaiuso33/gpa-calculator-web/) · [Live demo](https://gaiuso33.github.io/gpa-calculator-web/) |
-| **E-Learning Web App** | Lets students browse courses, watch lessons and track progress | React, CSS, JavaScript | [Code](https://github.com/gaiuso33/e-learning-app) · [Live demo](https://e-learning-app.vercel.app) |
+| **E-Learning Web App** | Lets students browse courses, watch lessons and track progress | React, TailwindCSS, JavaScript | [Code](https://github.com/gaiuso33/e-learning-app) · [Live demo](https://e-learning-app.vercel.app) |
 
 ---
 
