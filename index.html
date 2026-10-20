@@ -57,6 +57,7 @@ footer{padding:2rem 0;text-align:center;font-size:.85rem;color:var(--mute)}
 .job{display:grid;grid-template-columns:200px 1fr;gap:2rem;padding:1.5rem 0;border-top:1px solid var(--line)}.job:first-of-type{border-top:0;padding-top:0}
 .job .when{color:var(--mute);font-size:.92rem}.job h3{font-size:1.2rem;margin:0}.job .org{color:var(--acc);font-weight:600;margin:0 0 .6rem}
 .job ul{margin:0;padding-left:1.1rem;color:var(--mute)}.job li{margin-bottom:.35rem}
+.pro{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem;margin-bottom:2.5rem}.pro div{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--hi);border-radius:.6rem;padding:1.1rem 1.25rem}.pro details{margin-top:.6rem;font-size:.9rem}.pro summary{cursor:pointer;color:var(--acc);font-weight:600}.pro ul{margin:.5rem 0 0;padding-left:1.1rem;color:var(--mute)}.pro b{display:block}.pro span{color:var(--mute);font-size:.9rem}
 .certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}.certs h3{font-size:1rem;margin:0 0 .75rem}
 .certs ul{list-style:none;margin:0;padding:0}.certs li{padding:.4rem 0;border-bottom:1px solid var(--line);font-size:.95rem}.certs li span{color:var(--mute);font-size:.85rem;display:block}
 @media(max-width:720px){.hero{flex-direction:column-reverse;align-items:flex-start;gap:2rem}.job{grid-template-columns:1fr;gap:.5rem}.about{grid-template-columns:1fr;gap:2rem}nav{gap:1rem}}
@@ -99,7 +100,7 @@ footer{padding:2rem 0;text-align:center;font-size:.85rem;color:var(--mute)}
 
     <section id="skills"><h2>What I work with</h2><div class="skills" id="skillList"></div></section>
 
-    <section id="certs"><h2>Certifications</h2><div class="certs" id="certList"></div></section>
+    <section id="certs"><h2>Certifications</h2><div class="pro" id="proList"></div><div class="certs" id="certList"></div></section>
 
     <section id="projects">
       <h2>Projects</h2>
